@@ -1,0 +1,8 @@
+Excercise 2 bulletpoints:
+
+Da trådene kan skifte midt i deres løbende process, kan man risikere trådene skifte midt i optællingen der kan gøre at den ene
+tråd tæller 1 op, hvorefter den anden kan overtage og tælle 2 og derved skabe et ulige nummer.
+Dette sker ofte nok til at det kan være et problem. Derfor laver vi synchronize så trådene tæller helt op før den
+næste tråd kan gå i gang med at tælle. Derfor forbliver tallene lige.
+Det er svært at sige hvor ofte problemet opstår da det kan ske når som helst. Det er blevet observeret efter 300 kald
+og 100.000 så det er meget inkonsekvent.
